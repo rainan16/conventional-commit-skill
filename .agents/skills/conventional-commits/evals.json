@@ -1,0 +1,149 @@
+{
+  "skill_name": "conventional-commits",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a Conventional Commit message for a bugfix in the auth service that fixes a login error.",
+      "expected_output": "A commit header using type fix, optionally scoped to auth, with an imperative description and no trailing period.",
+      "files": [],
+      "expectations": [
+        "Uses type 'fix' in the commit header",
+        "Description uses imperative mood (not past tense)",
+        "Description is not capitalized (lowercase first letter)",
+        "Description does not end with a period",
+        "Description relates to fixing a login error"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a Conventional Commit header and optional body for adding a new payments API endpoint.",
+      "expected_output": "A commit message using type feat with a scope like api or payments, an imperative description, and an optional body describing the change.",
+      "files": [],
+      "expectations": [
+        "Uses type 'feat' in the commit header",
+        "Description uses imperative mood",
+        "Description is not capitalized",
+        "Description does not end with a period",
+        "Description relates to adding a payments API endpoint"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Suggest a Conventional Commit message for a breaking change that removes support for Node 10.",
+      "expected_output": "A commit message using feat! or fix! and a BREAKING CHANGE footer explaining the removal of Node 10 support.",
+      "files": [],
+      "expectations": [
+        "Commit message includes 'BREAKING CHANGE' footer or '!' notation",
+        "Description relates to removing Node 10 support",
+        "Description uses imperative mood",
+        "Description is not capitalized",
+        "Description does not end with a period"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Review this commit message and tell me if it follows Conventional Commits: Added user profile page.",
+      "expected_output": "Feedback that the header uses past tense and capitalization; a corrected commit message using imperative mood, such as fix: add user profile page.",
+      "files": [],
+      "expectations": [
+        "Identifies that 'Added user profile page' does not follow Conventional Commits",
+        "Explains the issue (past tense and/or capitalization)",
+        "Provides a corrected commit message",
+        "Corrected version uses imperative mood",
+        "Corrected version is not capitalized and has no trailing period"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Recommend a Conventional Commit title for updating CI to run security scans.",
+      "expected_output": "A commit message using type ci or chore, an imperative description of the CI security scan update, and no trailing punctuation.",
+      "files": [],
+      "expectations": [
+        "Uses type 'ci' or 'chore' in the commit header",
+        "Description uses imperative mood",
+        "Description is not capitalized",
+        "Description does not end with a period",
+        "Description relates to adding/updating CI security scans"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "I fixed a typo in the CHANGELOG file. Write a Conventional Commit for it.",
+      "expected_output": "A commit message using type docs with an imperative description about correcting the CHANGELOG spelling, no body, no trailing period.",
+      "files": [],
+      "expectations": [
+        "Uses type 'docs' in the commit header",
+        "Description uses imperative mood",
+        "Description is not capitalized",
+        "Description does not end with a period",
+        "Description relates to fixing a typo in CHANGELOG"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "I extracted the user validation logic into its own service class. Give me a Conventional Commit for this refactoring.",
+      "expected_output": "A commit message using type refactor (or optionally refactor(validation)), an imperative description about extracting user validation, and no trailing period.",
+      "files": [],
+      "expectations": [
+        "Uses type 'refactor' in the commit header",
+        "Description uses imperative mood",
+        "Description is not capitalized",
+        "Description does not end with a period",
+        "Description relates to extracting user validation logic"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "I updated Node.js from version 7.1.0 to 7.2.0 as a routine dependency bump. Write a Conventional Commit for this.",
+      "expected_output": "A commit message using type chore with scope deps, an imperative description about updating Node, and no trailing period.",
+      "files": [],
+      "expectations": [
+        "Uses type 'chore' in the commit header",
+        "Description uses imperative mood",
+        "Description is not capitalized",
+        "Description does not end with a period",
+        "Description relates to updating Node.js or dependencies"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "I fixed a race condition where multiple API requests were stepping on each other. Write a Conventional Commit with a multi-paragraph body explaining the fix (request IDs, dismissing stale responses, removing old timeouts). Include a Reviewed-by footer for 'Z' and a Refs footer pointing to issue 123.",
+      "expected_output": "A commit message using type fix, a short imperative header (e.g. 'prevent racing of requests'), a multi-paragraph body explaining the mechanism, and footers for Reviewed-by and Refs.",
+      "files": [],
+      "expectations": [
+        "Uses type 'fix' in the commit header",
+        "Header description uses imperative mood",
+        "Commit includes a body with multiple paragraphs",
+        "Commit includes a 'Reviewed-by: Z' footer",
+        "Commit includes a 'Refs: 123' footer"
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "I'm making a breaking change to how configs work — they can now extend other config files. Write a Conventional Commit using a BREAKING CHANGE footer (not the ! notation).",
+      "expected_output": "A commit message using type feat, an imperative description about extending configs, and a BREAKING CHANGE footer explaining the new extends behavior. The ! notation should NOT appear after the type.",
+      "files": [],
+      "expectations": [
+        "Uses type 'feat' in the commit header",
+        "Description uses imperative mood",
+        "Description relates to extending config files",
+        "Includes 'BREAKING CHANGE' footer explaining the change",
+        "Does NOT use the '!' notation after type/scope"
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "I added Polish language support to the i18n module. Write a Conventional Commit with a scope.",
+      "expected_output": "A commit message using type feat with scope lang, an imperative description about adding Polish language support, and no trailing period.",
+      "files": [],
+      "expectations": [
+        "Uses type 'feat' in the commit header",
+        "Commit header includes a scope in parentheses",
+        "Description uses imperative mood",
+        "Description is not capitalized",
+        "Description does not end with a period",
+        "Description relates to adding Polish language support"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running skills-ref validate for SKILL.md"
+npx -y skills-ref validate ./.agents/skills/conventional-commits || {
+  echo "skills-ref validation failed. Abort commit."
+  exit 1
+}
+
+echo "skills-ref validation passed."

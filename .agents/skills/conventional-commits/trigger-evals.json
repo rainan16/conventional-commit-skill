@@ -1,0 +1,90 @@
+[
+  {
+    "query": "Write a Commit message for fixing a login bug in the auth service.",
+    "should_trigger": true
+  },
+  {
+    "query": "Suggest a Commit title for adding a new payments API endpoint.",
+    "should_trigger": true
+  },
+  {
+    "query": "Review this commit header and tell me if it follows Conventional Commits: feat(api): add orders endpoint.",
+    "should_trigger": true
+  },
+  {
+    "query": "Convert this change into a Conventional Commit message that includes a breaking change footer.",
+    "should_trigger": true
+  },
+  {
+    "query": "Help me write a Conventional Commit for updating CI to run security checks.",
+    "should_trigger": true
+  },
+  {
+    "query": "I need a proper commit message for refactoring database validation logic.",
+    "should_trigger": true
+  },
+  {
+    "query": "Tell me how to format a commit message when the change affects docs only.",
+    "should_trigger": true
+  },
+  {
+    "query": "Does this commit message follow Conventional Commits? fix: correct password reset flow.",
+    "should_trigger": true
+  },
+  {
+    "query": "Give me a Conventional Commit annotation for changing the API response format.",
+    "should_trigger": true
+  },
+  {
+    "query": "Suggest a commit message for a chore that updates dependency versions.",
+    "should_trigger": true
+  },
+  {
+    "query": "Commit all changes",
+    "should_trigger": true
+  },
+  {
+    "query": "Commit and separate into logical commits",
+    "should_trigger": true
+  },
+  {
+    "query": "Write a GitHub Actions workflow that runs tests on every push.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain semantic versioning and how version numbers work.",
+    "should_trigger": false
+  },
+  {
+    "query": "Create a changelog entry for a recent feature release.",
+    "should_trigger": false
+  },
+  {
+    "query": "Help me write a Jira ticket description for a UI redesign.",
+    "should_trigger": false
+  },
+  {
+    "query": "Describe the difference between a PR title and a commit message.",
+    "should_trigger": false
+  },
+  {
+    "query": "Format this Markdown README section about git history.",
+    "should_trigger": false
+  },
+  {
+    "query": "Generate a Git branch naming convention for feature work.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review this code snippet for performance issues.",
+    "should_trigger": false
+  },
+  {
+    "query": "Suggest a PR summary for the API endpoint change.",
+    "should_trigger": false
+  },
+  {
+    "query": "Help me set up a pre-commit hook for linting Python files.",
+    "should_trigger": false
+  }
+]
